@@ -39,7 +39,7 @@ class BlogPostsController < ApplicationController
     if @post.destroy
       redirect_to blog_posts_path
     else
-      # 6) If destroying the specified blog post was not accomplsihed, then the user will be directed to page of the single blog post.
+      # 6) If destroying the specified blog post was not accomplished, then the user will be directed to page of the single blog post.
       redirect_to blog_post_path(@post)
     end
   end
@@ -58,6 +58,6 @@ end
 
 # 9) This is a class to give the spefoco attributes to BlogPost objects
 class BlogPost < ApplicationRecord
-  # 10) Defines the relationship with a separate object, Comments.
+  # 10) Defines the relationship with a separate class, Comments.
   has_many :comments
 end

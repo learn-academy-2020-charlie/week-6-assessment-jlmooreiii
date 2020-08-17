@@ -23,7 +23,7 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
 3. Based on your knowledge of Rails conventions, write a route for a webpage called "game" that takes in a parameter called "guess" with a controller called "main".
 
-  Your answer: get 'game/new' => 'main#new' 
+  Your answer: get 'game/:guess' => 'main#game' 
 
 
 
@@ -41,10 +41,10 @@ Then, research the question to expand on your answer. Even if you feel you have 
 
   Researched answer:
   1) rails g model Example attribute1:integer attribute2:string
-  This creates a new model to store data in. It will have two columns, one that takes an integer value and one that takes in a string value. 
+  This creates a new model to store data in. It will have two columns, one that takes an integer value and one that takes in a string value. We will get a schema and a migration. We will also get a model class. 
 
   2) rails g controller examples_controller 
-  This creates controller file. It's not specified directly for which model this controller is for other than the name. The methods and instance variables you specify in the controller determine which model the controller is for. It could be potentially for several. The controller, in general, manages how different actions are handled and displayed.
+  This creates controller file. It's not specified directly for which model this controller is for other than the name. The methods and instance variables you specify in the controller determine which model the controller is for. It could be potentially for several. The controller, in general, manages how different actions are handled and displayed. When you generate a controller, you get a view folder.
 
   3) rails g migration 'change_integer_to_string_of_attribute1_in_examples'
   This creates a migration for for the Example model so that a change can be made the the schema.

@@ -37,7 +37,7 @@ const giveInfo = (array) => {
   for (let i = 0; i < arrayOfFixedNamedObjects.length; i++) {
     console.log(arrayOfFixedNamedObjects[i]);
   }
-  //Ends the .forEach
+  //Ends the for loop
 } // Ends function
 
 // Test to make sure that the function works
